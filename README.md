@@ -1,9 +1,15 @@
-# PostgreSQL Deployment
+# MySQL Deployment
 
-This deployment comes with PGAdmin 4, it requires two volumes to work **pg-data** which stores databases data and **pgadmin-data** which stores pgadmin user data. Common environment variables can be set in an env file; there is a sample config file in this repository: `config/local.env`
+This deployment comes with admine, it requires a volume for mysql **mysql-data**. Common environment variables can be set in an env file; there is a sample config file in this repository: `config/local.env`
 
 ## Useful commands
 
+1. Create volumes (once)
+
+    ```shell
+        docker volume create pg-data
+        docker volume create pgadmin-data
+    ```
 
 1. Run with Docker Compose
 
