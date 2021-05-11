@@ -7,8 +7,7 @@ This deployment comes with admine, it requires a volume for mysql **mysql-data**
 1. Create volumes (once)
 
     ```shell
-        docker volume create pg-data
-        docker volume create pgadmin-data
+        docker volume create mysql-data
     ```
 
 1. Run with Docker Compose
